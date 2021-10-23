@@ -1,0 +1,32 @@
+ <Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <AssemblyTitle>Momentum Knight</AssemblyTitle>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <DebugType>portable</DebugType>
+        <Copyright>Copyright © 2021</Copyright>
+        <OutputPath>bin\$(Configuration)\</OutputPath>
+        <LangVersion>latest</LangVersion>
+        <HollowKnightRefs>../HollowKnightManaged/</HollowKnightRefs>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="Assembly-CSharp">
+            <HintPath>$(HollowKnightRefs)/Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="MMHOOK">
+            <HintPath>$(HollowKnightRefs)/MMHOOK_Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="MonoMod.Utils">
+            <HintPath>$(HollowKnightRefs)/MonoMod.Utils.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.Cecil">
+            <HintPath>$(HollowKnightRefs)/Mono.Cecil.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>$(HollowKnightRefs)/UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.Physics2DModule">
+            <HintPath>$(HollowKnightRefs)/UnityEngine.Physics2DModule.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+</Project>
